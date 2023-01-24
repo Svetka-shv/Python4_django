@@ -23,6 +23,7 @@ from django.http.response import HttpResponse
 def home_view(request: HttpRequest) -> HttpResponse:
     return HttpResponse(f"<h1>Домашня сторінка</h1>")
 
+
 def progress(request: HttpRequest, start: int, count: int, step: int) -> HttpResponse:
     end = start + step * (count - 1)
     l = []
